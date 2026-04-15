@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-ts",
+  "version": "1.0.0",
+  "description": "Criando API em NodeJS usando TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoAlves20/NodeJS-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JoaoAlves20/NodeJS-TS/issues"
+  },
+  "homepage": "https://github.com/JoaoAlves20/NodeJS-TS#readme",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
