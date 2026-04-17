@@ -1,7 +1,17 @@
-import { createServer } from "node:http";
+import express from 'express';
+import helmet from 'helmet';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const server = createServer((request, response) => {
-  response.end("Hello, World!");
-})
+import { router } from './routes/router.ts';
 
-server.listen(3000, () => console.log("Server is running on http://localhost:3000"));
+const server = express();
+
+server.use(helmet());
+server.use(express.json());
+server.use(express.urlencoded({ extended: true }));
+
+server.use('/user', router);
+
+const port: string = process.env.PORT || '8080';
+server.listen(port, () => console.log(`Server running on http://localhost:${port}`));

@@ -19,10 +19,13 @@
   },
   "homepage": "https://github.com/JoaoAlves20/NodeJS-TS#readme",
   "devDependencies": {
+    "@types/express": "^5.0.6",
     "@types/node": "^25.6.0",
     "typescript": "^6.0.2"
   },
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
   }
 }
