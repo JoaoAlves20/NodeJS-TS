@@ -1,9 +1,9 @@
 import { Router } from "express";
 
+import { router as userRouter } from "./user.route.ts";
+import { router as testsRouter } from "./tests.route.ts";
+
 export const router = Router();
 
-router.get('/:name', (request, response) => {
-    const { name } = request.params;
-
-    response.json({ username: name });
-})
+router.use('/user', userRouter);
+router.use('/tests', testsRouter);

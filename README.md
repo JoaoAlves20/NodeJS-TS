@@ -1,2 +1,3 @@
 # NodeJS-TS
-Criando API em NodeJS usando TypeScript
+
+Tudo o que estiver aqui neste repositório irá se tratar de testes para reaprender a criar APIs usando NodeJS com Express.

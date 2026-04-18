@@ -11,7 +11,7 @@ server.use(helmet());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
-server.use('/user', router);
+server.use(router);
 
 const port: string = process.env.PORT || '8080';
 server.listen(port, () => console.log(`Server running on http://localhost:${port}`));
