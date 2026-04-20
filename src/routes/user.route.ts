@@ -1,11 +1,9 @@
 import { Router } from "express";
 
+import UserController from "../controller/user.controller.ts";
+
 const router = Router();
 
-router.get('/:name', (request, response) => {
-    const { name } = request.params;
-
-    response.json({ username: name });
-})
+router.get('/:name', UserController.getUser);
 
 export default router;

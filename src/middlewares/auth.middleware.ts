@@ -1,6 +1,6 @@
 import type { RequestHandler } from "express";
 
-export const interferir: RequestHandler = (request, response, next) => {
+export const authMiddleware: RequestHandler = (_, response, next) => {
     let logged = true;
 
     if (!logged) {
