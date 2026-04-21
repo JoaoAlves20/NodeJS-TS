@@ -4,7 +4,8 @@
   "description": "Criando API em NodeJS usando TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/index.ts"
+    "dev": "node --watch src/index.ts",
+    "dev:file": "node --watch src/file.ts"
   },
   "repository": {
     "type": "git",
